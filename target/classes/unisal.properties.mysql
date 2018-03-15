@@ -1,0 +1,7 @@
+jdbc.username=root
+jdbc.password=
+jdbc.protocolo=jdbc:mysql://
+jdbc.host=localhost
+jdbc.port=3306
+jdbc.database=test
+jdbc.driver=com.mysql.jdbc.Driver
