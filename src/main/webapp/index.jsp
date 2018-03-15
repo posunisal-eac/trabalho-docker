@@ -6,7 +6,7 @@
         <title>UNISAL - Desenvolvimento de Sistemas Web e Mobile</title>        
     </head>
     
-    <body>	
+    <body>
        <form method="post" action="login">
         Usuário:<input type="text" name="plogin" /><br/>
         Senha:<input type="password" name="psenha" /><br/>

@@ -25,9 +25,9 @@
 		action="listaFilmes" method="post">
 		<button type="submit" class="btn btn-default">Ver filmes</button>
 	</form>
-
+	<br/>
 	<form class="form-group"
-		action="listaFilmes" method="post">
+		action="cadastrarFilmes" method="post">
 		<button type="submit" class="btn btn-default">Cadastrar filmes</button>
 	</form>
 	
