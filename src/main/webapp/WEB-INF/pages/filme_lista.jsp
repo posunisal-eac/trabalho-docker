@@ -27,7 +27,7 @@
 	</form>
 	<br/>
 	<form class="form-group"
-		action="cadastrarFilmes" method="post">
+		action="salvarUsuario" method="post">
 		<button type="submit" class="btn btn-default">Cadastrar filmes</button>
 	</form>
 	
