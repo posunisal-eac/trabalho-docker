@@ -11,6 +11,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpSession;
 import br.unisal.util.Constantes;
 import br.unisal.util.Erro;
+import br.unisal.dao.FilmeDAO;
 import br.unisal.dao.UsuarioDAO;
 import br.unisal.model.Filme;
 
@@ -47,9 +48,11 @@ public class LoginController extends HttpServlet {
 	        
 	        if(UsuarioDAO.checkUser(login, senha))
 	        {
-	        	//String page = Constantes.raizPages + "filme.jsp";
 	        	
-	    		String page = Constantes.raizPages + "filme2.jsp";
+	        	//String page = Constantes.raizPages + "filme.jsp";
+	    		//String page = Constantes.raizPages + "filme2.jsp";
+	    		//String page = Constantes.raizPages + "filmeListView.jsp";
+	    		String page = Constantes.raizPages + "inicio.jsp";
 	            RequestDispatcher rs = req.getRequestDispatcher(page);
 	            rs.forward(req, resp);
 	        }

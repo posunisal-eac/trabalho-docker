@@ -18,10 +18,11 @@ public class Filme {
 	/**
 	 * @param nome
 	 */
-	public Filme(String nome) {
+	public Filme(String nome, String descricao) {
 		super();
 		this.nome = nome;
 		this.uuid = Util.UUIDGenerate();
+		this.descricao = descricao;
 	}
 
 	/**

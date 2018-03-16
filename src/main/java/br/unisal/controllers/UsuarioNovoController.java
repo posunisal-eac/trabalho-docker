@@ -15,8 +15,10 @@ import br.unisal.dao.UsuarioDAO;
 import br.unisal.model.Usuario;
 import br.unisal.util.Constantes;
 
-@WebServlet(name = "UsuarioListController", description = "Controlador para listar usuários", urlPatterns = "/listaUsuarios")
-public class UsuarioListController extends HttpServlet {
+@WebServlet(name = "UsuarioNovoController", 
+description = "Controlador para cadastrar usuário", 
+urlPatterns = "/novoUsuario")
+public class UsuarioNovoController extends HttpServlet {
 
 	/**
 	 * 
@@ -39,7 +41,7 @@ public class UsuarioListController extends HttpServlet {
 		req.setAttribute("usuarios", usuarios);
 		//req.getRequestDispatcher(Constantes.raizPages + "usuariosCadastrar.jsp").forward(req, resp);
 		//req.getRequestDispatcher(Constantes.raizPages + "inicio.jsp").forward(req, resp);
-		req.getRequestDispatcher(Constantes.raizPages + "usuariosLista.jsp").forward(req, resp);
+		req.getRequestDispatcher(Constantes.raizPages + "usuariosCadastrar.jsp").forward(req, resp);
 	}
 
 }
