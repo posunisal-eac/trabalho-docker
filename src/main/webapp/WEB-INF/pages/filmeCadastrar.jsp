@@ -3,6 +3,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:import url="../pages/template/header.jsp" />
 
+	<form class="form-group"
+		action="inicio" method="post">
+		<button type="submit" class="btn btn-default">Início</button>
+	</form>
+	<br/>
+	
 <div>
 	<form class="form-group" action="salvarFilme" method="post">
 		<div class="form-group">
