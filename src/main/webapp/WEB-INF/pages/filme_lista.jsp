@@ -17,18 +17,109 @@
 	</form>
 	<br/>
 
-	<table class="table table-striped">
-		<tbody>
-			<c:forEach var="u" items="${filmes}">
-				<tr id="filme_${u.id}">
-					<td>${u.id}</td>
-					<td>${u.nome}</td>
-					<td>${u.uuid}</td>
-					<td>${u.descricao}</td>
-				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<table class="table table-striped" id="tabela-filmes">
+					<thead>
+				      <tr>
+				        <th>#</th>
+				        <th>Título</th>
+				        <th>Descrição</th>
+				        <th>Ações</th>
+				      </tr>
+				    </thead>
+				    <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+				      <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+				      <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+				      <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+				      <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+				      <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+				      <tr>
+				        <td>Mary</td>
+				        <td>Moe</td>
+				        <td>mary@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+				      <tr>
+				        <td>July</td>
+				        <td>Dooley</td>
+				        <td>july@example.com</td>
+				        <td>
+				        	<a href="editarFilme" class="btn btn-primary">Editar</a>
+							<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+						</td>
+				      </tr>
+					<!-- 
+						<tbody>
+						<c:forEach var="u" items="${filmes}">
+							<tr id="filme_${u.id}">
+								<td>${u.id}</td>
+								<td>${u.nome}</td>
+								<td>${u.descricao}</td>
+								<td>
+									<a href="editarFilme" class="btn btn-primary">Editar</a>
+									<a href="excluirFilme" class="btn btn-danger">Excluir</a>
+								</td>
+							</tr>
+						</c:forEach>
+					</tbody>
+					 -->
+				</table>
+			</div>
+		</div>
+	</div>
 	
 </div>
 

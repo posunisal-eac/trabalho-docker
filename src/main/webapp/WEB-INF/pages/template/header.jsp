@@ -7,12 +7,34 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Webflix Unisal</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-<link rel="stylesheet" type="text/css" href="../../../../static/css/estilo.css" />
+<link href="<c:url value="/static/css/bootstrap.min.css" />" rel="stylesheet">
+<link href="<c:url value="/static/css/estilo.css" />" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet">
+    
 </head>
 <body>
-	<div>
-		<c:import url="../pages/logout.jsp" />
-	</div>
+
+<header>
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-between fixed-top">
+	  <!-- Brand -->
+	  <a class="navbar-brand" href="#">Logo</a>
+	
+	  <!-- Links -->
+	  <ul class="navbar-nav">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Destaques</a>
+	    </li>
+	
+	    <!-- Dropdown -->
+	    <li class="nav-item dropdown">
+	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+	        Opções
+	      </a>
+	      <div class="dropdown-menu">
+	        <a class="dropdown-item" href="<c:import url="../pages/logout.jsp" />">				
+			</a>
+	      </div>
+	    </li>
+	  </ul>
+	</nav>
+  </header>
