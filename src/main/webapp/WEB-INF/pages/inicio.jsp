@@ -175,7 +175,7 @@
 	</div>
 	<!-- /.row -->
 
-	<!-- 
+
 <form class="form-group" action="listaUsuarios" method="post">
 	<button type="submit" class="btn btn-default">Lista usuários</button>
 </form>
@@ -183,7 +183,6 @@
 <form class="form-group" action="listaFilmes" method="post">
 	<button type="submit" class="btn btn-default">Lista filmes</button>
 </form>
- -->
 
 
 
