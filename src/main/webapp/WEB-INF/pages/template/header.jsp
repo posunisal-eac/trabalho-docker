@@ -38,3 +38,28 @@
 	  </ul>
 	</nav>
   </header>
+  
+  <div class="container-fluid">
+	<div class="row">
+
+		<div class="col-2" id="barra-perfil">
+			<div class="row">
+				<div class="col-12">
+					<img src="http://img.oskaras.com/2012/04/trocar_foto_avatar_gravatar.png" class="img-perfil" />
+					<p>Seja bem-vindo,</p>
+					<h4>Ernane Augusto</h4>
+					
+					<ul>
+						<li>
+							<a>Cadastrar filme</a>
+						</li>
+						<li>
+							<a>Editar filme</a>
+						</li>
+						<li>
+							<a>Listar filmes</a>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</div>		
