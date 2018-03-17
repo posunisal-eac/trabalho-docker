@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.unisal.dao.FilmeDAO;
 import br.unisal.model.Filme;
+import br.unisal.model.Usuario;
 import br.unisal.util.Constantes;
 
 @WebServlet(name = "FilmeListController", description = "Controlador para listar usuários", urlPatterns = "/listaFilmes")

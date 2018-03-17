@@ -1,0 +1,35 @@
+/* Geral */
+*{
+	color: #2c3e50;
+}
+button:hover,
+a:hover{
+	cursor: pointer;
+}
+
+/* Tela login */
+#container-login h1{
+	color: #c0392b;
+	font-size: 20px;
+}
+#container-login h1 span{
+	color: #e74c3c;
+	font-size: 16px;
+}
+#container-login form{
+	background: #ecf0f1;
+	padding: 20px;
+}
+#container-login > div{
+	height: 100vh;
+}
+
+
+/**/
+
+
+
+/**/
+/**/
+/**/
+/**/

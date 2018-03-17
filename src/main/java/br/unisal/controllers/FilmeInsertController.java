@@ -13,9 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.unisal.dao.FilmeDAO;
 import br.unisal.model.Filme;
+import br.unisal.model.Usuario;
 import br.unisal.util.Constantes;
 
-@WebServlet(name = "FilmeInsertController", description = "Controlador para inserir usuários", urlPatterns = "/salvarFilme")
+@WebServlet(name = "FilmeInsertController", description = "Controlador para inserir filmes", urlPatterns = "/salvarFilme")
 public class FilmeInsertController extends HttpServlet{
 
 	/**
@@ -28,7 +29,8 @@ public class FilmeInsertController extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		Filme filme = new Filme(req.getParameter("nome"));
+		Filme filme = new Filme(req.getParameter("nome"),
+				req.getParameter("descricao"));
 		
 		List<Filme> filmes = new ArrayList<>();
 		
