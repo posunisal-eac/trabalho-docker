@@ -10,14 +10,6 @@
         <link rel="stylesheet" type="text/css" href="./static/css/estilo.css" />
     </head>
     
-<<<<<<< HEAD
-    <body>
-       <form method="post" action="login">
-        Usuário:<input type="text" name="plogin" /><br/>
-        Senha:<input type="password" name="psenha" /><br/>
-        <input type="submit" value="login" />
-        </form>
-=======
     <body>	
 		<main class="container" id="container-login">
 			<div class="row justify-content-center align-items-center">
@@ -39,7 +31,6 @@
 				</div>
 			</div>
 		</main>
->>>>>>> 447adf810794d4a6703e700c9396fa4f4478c5ef
     </body>
     
 </html>
