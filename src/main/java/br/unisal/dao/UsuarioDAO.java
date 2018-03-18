@@ -74,7 +74,7 @@ public class UsuarioDAO extends GenericDAO implements DAOInterface<Usuario> {
 	}
 
 	public List<Usuario> findAll() throws ClassNotFoundException, SQLException, IOException {
-		String sql = "select id, nome, email, login, senha, uuid from usuario";
+		String sql = "select id, nome, email, login, senha, uuid from usuario order by id desc";
 		List<Usuario> usuarios = new ArrayList<>();
 
 		List<Object[]> objects = executaSqlSemParametro(getConnectionPool(), sql);

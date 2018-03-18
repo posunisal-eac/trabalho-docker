@@ -38,12 +38,13 @@ public class FilmeDAO extends GenericDAO implements DAOInterface<Filme> {
 	}
 
 	public void update(Filme t) throws ClassNotFoundException, SQLException, IOException {
-		String sql = "update filme set nome = ? from filme";
+		//String sql = "update filme set nome = ? from filme";
+		String sql = "update filme set nome = ? from filme where id = ?";
 		PreparedStatement ps = null;
 		try {
-			ps = getConnectionPool().prepareStatement(sql);
-			ps.setLong(2, t.getId());
+			ps = getConnectionPool().prepareStatement(sql);			
 			ps.setString(1, t.getNome());
+			ps.setLong(2, t.getId());
 
 			ps.execute();
 		} finally {
@@ -69,7 +70,7 @@ public class FilmeDAO extends GenericDAO implements DAOInterface<Filme> {
 	}
 
 	public List<Filme> findAll() throws ClassNotFoundException, SQLException, IOException {
-		String sql = "select id, nome, uuid, descricao from filme";
+		String sql = "select id, nome, uuid, descricao from filme order by id desc";
 		List<Filme> filmes = new ArrayList<>();
 
 		List<Object[]> objects = executaSqlSemParametro(getConnectionPool(), sql);

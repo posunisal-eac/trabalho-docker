@@ -1,3 +1,3 @@
 <form action="logout" method="post">
-    <input type="submit" value="Logout" />
+    <input type="submit" value="Logout" class="btn-site"/>
 </form>

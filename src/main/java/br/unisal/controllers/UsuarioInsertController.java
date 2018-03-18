@@ -45,7 +45,7 @@ public class UsuarioInsertController extends HttpServlet{
 		}
 				
 		req.setAttribute("usuarios", usuarios);
-		req.getRequestDispatcher(Constantes.raizPages + "inicio.jsp").forward(req, resp);
+		req.getRequestDispatcher(Constantes.raizPages + "usuariosLista.jsp").forward(req, resp);
 	}
 
 }

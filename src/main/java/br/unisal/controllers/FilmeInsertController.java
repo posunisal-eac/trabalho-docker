@@ -44,7 +44,7 @@ public class FilmeInsertController extends HttpServlet{
 		}
 				
 		req.setAttribute("filmes", filmes);
-		req.getRequestDispatcher(Constantes.raizPages + "inicio.jsp").forward(req, resp);
+		req.getRequestDispatcher(Constantes.raizPages + "filmeCadastrar.jsp").forward(req, resp);
 	}
 
 }
