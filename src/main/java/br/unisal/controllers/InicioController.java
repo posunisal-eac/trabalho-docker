@@ -29,17 +29,30 @@ public class InicioController extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = -2664599753751370793L;
-	
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {		
 
-	    resp.setContentType("text/html;charset=UTF-8");
-	    PrintWriter out = resp.getWriter();
-	    
+	private static final FilmeDAO FILME_DAO = FilmeDAO.getInstance();
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		resp.setContentType("text/html;charset=UTF-8");
+		PrintWriter out = resp.getWriter();
+
+		List<Filme> filmes = new ArrayList<>();
+
+		try {
+			filmes = FILME_DAO.findAll();
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e.toString());
+		}
+
+		req.setAttribute("filmes", filmes);
+
 		String page = Constantes.raizPages + "inicio.jsp";
-	    RequestDispatcher rs = req.getRequestDispatcher(page);
-	    rs.forward(req, resp);
-       
+		RequestDispatcher rs = req.getRequestDispatcher(page);
+		rs.forward(req, resp);
+		
+
 	}
 
 }
