@@ -2,8 +2,7 @@ package br.unisal.controllers;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,39 +12,34 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.unisal.dao.FilmeDAO;
 import br.unisal.model.Filme;
-import br.unisal.model.Usuario;
 import br.unisal.util.Constantes;
 
-@WebServlet(name = "FilmeInsertController", description = "Controlador para inserir filmes", urlPatterns = "/salvarFilme")
-public class FilmeInsertController extends HttpServlet{
+@WebServlet(name = "FilmeEditarController", description = "Controlador buscar filme", urlPatterns = "/editarFilme")
+public class FilmeEditarController extends HttpServlet {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 2380365497770693025L;
 	
-	private static final FilmeDAO FILME_DAO = FilmeDAO.getInstance();
+	private static final FilmeDAO Filme_DAO = FilmeDAO.getInstance();
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		Filme filme = new Filme(req.getParameter("nome"),
-								req.getParameter("descricao"),
-								req.getParameter("imagem_pq"));
+		Filme filme = new Filme();
+		Long id = Long.parseLong(req.getParameter("id"));
 		
-		List<Filme> filmes = new ArrayList<>();
 		
 		try {
-			FILME_DAO.insert(filme);
-			
-			filmes = FILME_DAO.findAll();
+			filme = Filme_DAO.findById(id);
 		
 		} catch (ClassNotFoundException | SQLException e) {
 			System.out.println(e.toString());
 		}
-				
-		req.setAttribute("filmes", filmes);
-		req.getRequestDispatcher(Constantes.raizPages + "filme_lista.jsp").forward(req, resp);
+		req.setAttribute("filme", filme);
+		req.getRequestDispatcher(Constantes.raizPages + "filmeEditar.jsp").forward(req, resp);
+		
 	}
 
 }

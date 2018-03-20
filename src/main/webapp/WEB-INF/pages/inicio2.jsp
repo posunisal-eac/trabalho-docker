@@ -18,7 +18,9 @@
 			<div class="col-lg-4 col-md-6 col-12">
 				<div class="card">
 		
-					<img class="card-img-top" src="${u.imagem}" alt="Card image" />
+					<img class="card-img-top"
+						src="${u.imagem_pq}"
+						alt="Card image" />
 		
 					<div class="card-body">
 						<h4 class="card-title">${u.nome}</h4>
@@ -49,6 +51,8 @@
 						<!-- Modal body -->
 						<div class="modal-body">
 							<p><strong>Descrição: </strong>${u.descricao}</p>
+							<p><strong>Gênero: </strong>Animação</p>
+							<p><strong>Duração: </strong>90 min</p>
 							</div>
 	
 						<!-- Modal footer -->

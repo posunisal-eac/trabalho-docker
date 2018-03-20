@@ -11,10 +11,14 @@
 		<div class="col-12">
 			<div class="row justify-content-between container-nav-botoes">
 				<form action="inicio" method="post">
-					<button type="submit" class="btn btn-default"><i class="fa fa-home"></i> Home</button>
+					<button type="submit" class="btn btn-default">
+						<i class="fa fa-home"></i> Home
+					</button>
 				</form>
 				<form action="novoFilme" method="post">
-					<button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Novo filme</button>
+					<button type="submit" class="btn btn-primary">
+						<i class="fa fa-plus"></i> Novo filme
+					</button>
 				</form>
 			</div>
 		</div>
@@ -39,12 +43,21 @@
 								<td>${u.nome}</td>
 								<td>${u.descricao}</td>
 								<td>
-									<a href="editarFilme" class="btn btn-primary" title="Editar filme">
+
+									<form action="editarFilme" method="post">
+										<input type="hidden" value="${u.id}" name="id" />
+										<button type="submit" class="btn btn-primary">
 										<i class="fa fa-edit"></i>
-									</a>
-									<a href="excluirFilme" class="btn btn-danger" title="Excluir filme">
+										</button>
+									</form>
+
+									<form action="excluirFilme" method="post">
+										<input type="hidden" value="${u.id}" name="id" />
+										<button type="submit" class="btn btn-danger">
 										<i class="fa fa-times"></i>
-									</a>
+										</button>
+									</form>
+
 								</td>
 							</tr>
 						</c:forEach>

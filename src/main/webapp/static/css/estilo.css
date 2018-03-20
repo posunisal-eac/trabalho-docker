@@ -197,6 +197,7 @@ table .btn {
 
 #tabela-filmes td:last-child {
 	min-width: 150px;
+	display: flex;
 }
 
 /****** ******/

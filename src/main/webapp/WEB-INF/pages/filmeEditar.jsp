@@ -23,22 +23,20 @@
 
 	<div class="row justify-content-center">
 		<div class="col-md-6 col-12">
-			<form class="form-group" action="salvarFilme" method="post">
-				<div class="form-group">
+			<form class="form-group" action="updateFilme" method="post">
+				<input type="hidden" value="${filme.id}" name="id"/>
+				<div class="form-group">				
 					<input type="text" placeholder="Nome" name="nome"
-						class="form-control" required="required" />
+						class="form-control" required="required" value="${filme.nome}"/>
 				</div>
 				<div class="form-group">
-					<input type="text" placeholder="Resumo" name="descricao"
-						class="form-control" required="required" />
-				</div>
-				<div class="form-group">
-					<input type="text" placeholder="Url da imagem" name="imagem_pq"
-						class="form-control" required="required" />
+							
+				<textarea rows="7" placeholder="Resumo" name="descricao"
+						class="form-control" required="required">${filme.descricao}</textarea>
 				</div>
 				
 				<button type="submit" class="btn btn-success">
-				<i class="fa fa-check"></i> Cadastrar
+				<i class="fa fa-check"></i> Salvar
 				</button>
 			</form>
 		</div>

@@ -54,8 +54,7 @@
 						<img
 							src="http://img.oskaras.com/2012/04/trocar_foto_avatar_gravatar.png"
 							class="img-perfil" />
-						<p>Seja bem-vindo,</p>
-						<h4>Ernane Augusto</h4>
+						<p>Seja bem-vindo!</p>
 
 						<ul>
 							<li>

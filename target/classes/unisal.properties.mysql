@@ -5,3 +5,16 @@ jdbc.host=localhost
 jdbc.port=3306
 jdbc.database=test
 jdbc.driver=com.mysql.jdbc.Driver
+
+jdbc.username=root
+jdbc.password=
+#jdbc.protocolo=jdbc:postgresql://
+jdbc.protocolo=jdbc:mysql://
+jdbc.host=postgresql
+#/jdbc.port=5432
+jdbc.port=3306
+#jdbc.port=1433
+jdbc.database=test
+#jdbc.driver=org.postgresql.Driver
+jdbc.driver=com.mysql.jdbc.Driver
+#jdbc.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver

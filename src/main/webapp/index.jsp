@@ -15,7 +15,7 @@
 			<div class="row justify-content-center align-items-center">
 				<div class="col-md-4 col-xs-12">
 
-					<form method="post" action="login" class="form">
+					<form method="post" action="inicio" class="form">
 						<h1 class="text-center">Webflix :: <span>login</span></h1>
 						<hr>
 				       <div class="form-group">

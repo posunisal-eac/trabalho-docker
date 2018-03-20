@@ -9,6 +9,8 @@ public class Filme {
 	private String nome;
 	private String uuid;
 	private String descricao;
+	private String imagem_pq;
+
 
 
 	public Filme() {
@@ -18,11 +20,12 @@ public class Filme {
 	/**
 	 * @param nome
 	 */
-	public Filme(String nome, String descricao) {
+	public Filme(String nome, String descricao,  String imagem_pq) {
 		super();
 		this.nome = nome;
 		this.uuid = Util.UUIDGenerate();
 		this.descricao = descricao;
+		this.imagem_pq = imagem_pq;
 	}
 
 	/**
@@ -55,6 +58,13 @@ public class Filme {
 	}	
 	
 	/**
+	 * @return the imagem
+	 */	
+	public String getImagem() {
+		return imagem_pq;
+	}
+	
+	/**
 	 * @param nome
 	 *            the nome to set
 	 */
@@ -76,6 +86,13 @@ public class Filme {
 	 */
 	public String getUuid() {
 		return uuid;
+	}
+	/**
+	 * @param nome
+	 *            the imagem to set
+	 */
+	public void setImagem(String imagem_pq) {
+		this.imagem_pq = imagem_pq;
 	}
 	
 	/**
